@@ -1,15 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //Задача №1
+        System.out.println("Задача №1");
+        String firstName = "Ivan"; //для хранения имени
+        String middleName = "Ivanovich"; //для хранения отчества
+        String lastName = "Ivanov";//для хранения фамилии
+        String fullName = lastName + " " + firstName + " " + middleName;// для хранения Ф. И. О. сотрудника в формате «Фамилия Имя Отчество».
+        System.out.println("Ф. И. О. сотрудника — " + fullName);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        //Задача №2
+        System.out.println("Задача №2");
+        String s1 = fullName.toUpperCase();
+        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчета — " + s1);
+
+        //Задача №3
+        System.out.println("Задача №3");
+        String fullName2 = "Иванов Семён Семёнович";
+        String correctedFullName2 = fullName2.replace('ё', 'е');
+        System.out.println("Данные Ф. И. О. сотрудника — " + correctedFullName2);
     }
 }
